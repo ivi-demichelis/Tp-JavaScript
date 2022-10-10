@@ -1,0 +1,185 @@
+body{
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2%;
+    padding: 5%;
+}
+
+#container{
+    background-image:linear-gradient(to right top, #886aaa, #0692e3, #00b9ed, #00d6b9, #5fe85e);
+    padding: 3rem;
+    border-radius: 2%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 400px;
+}
+
+.password{
+    background-color: white;
+    color: solid black;
+    padding: 1rem;
+    border: 1px solid black;
+    width: 180px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; 
+    margin-left: 0%;
+}
+
+h3.password{
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    margin-top: -2%;
+    padding-top: 2%;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    color: #1b0c2b;
+    width: 300px;
+    height: 100px;
+}
+
+.icons{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    font-size: 40px;
+    margin-top: -5%;
+    cursor: pointer;
+}
+
+.checkOption{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0;
+}
+
+.radioOption{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0%;
+}
+
+.checkOption, .radioOption{
+    display: flex;
+}
+
+h1.title{
+    margin-top: 0%;
+    padding-top: 3%;
+    text-align: center; 
+    font-size: 40px;
+    color: white;
+    font-style: italic; 
+    font-size: 50px; 
+}
+
+input#numberRange{
+    width: 200px;
+    height: 25px;
+}
+
+label#rangeBarr{
+    font-size: 30px;
+    padding: 12px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.numberAccount{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.select{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 2%;    
+}
+
+.radioOption{
+    text-align: left;
+    justify-content: right;
+}
+
+.btn{
+    grid-column: span 2;
+    background-color: rgb(51, 51, 53);
+    border: 2px solid rgb(142, 131, 142);
+    color: white;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 18%;
+    width: fit-content;
+    margin-left: 5%;
+}
+
+.btn:hover{
+    background-color: rgb(155, 155, 246);
+}
+
+@media (max-width: 500px) {
+    h1{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+    h3.password{
+        width: 200px;
+    }
+    .select{
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items: center;
+        text-align: left;
+        align-content: space-between;
+    }
+    .checkOption{
+        justify-content:left;
+        text-align: left;
+        padding: 5%;
+    }
+    .radioOption{
+        margin-left: 17%;
+    }
+    #container{
+        width:200px;
+        height:fit-content;
+    }
+    .numberAccount{
+        display: flex;
+        flex-direction: column;
+    }
+}

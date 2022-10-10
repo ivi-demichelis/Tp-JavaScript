@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Magic Password</title>
+</head>
+<body>
+   
+<section id="container">
+    
+      <h1 class="title">Magic Password</h1>
+    
+    <h3 class="password">
+        <span id="passwordResult" class="blankSpace"></span>
+    </h3>
+
+        <div class="icons">
+        <span id="copy"><i class="fa-solid fa-copy"></i></span>
+        <span id="refresh"><i class="fa-sharp fa-solid fa-rotate"></i></span>
+        </div>    
+
+        <label for="charactersAmmount"></label> 
+            <div class="numberAccount">
+                <label for="numberRange" id="rangeBarr">Longitud</label>
+                <input type="range" min="4" max="12" id="numberRange" value="4">    
+            </div> 
+
+    <div class="select">
+        <div class="checkOption">         
+            <div>
+                <input type="checkbox" id="includeUpper" name="check">
+                <label for="includeUpper">Mayusculas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeLower" name="check"> 
+                <label for="includeLower">Minusculas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeSymbols" name="check"> 
+                <label for="includeSymbols">Simbolos</label>
+            </div>           
+            <div>
+                <input type="checkbox" id="includeNumbers"> 
+                <label for="includeNumbers">Numeros</label>
+            </div> 
+        </div>
+        <div class="radioOption">  
+            <div>
+                <input type="radio" id="lettersOnly" name="radio" value="letters"> 
+                <label for="lettersOnly">Solo letras</label>
+            </div> 
+            <div>
+                <input type="radio" id="numbersOnly" name="radio" value="numbers"> 
+                <label for="numbersOnly">Solo numeros</label>
+            </div> 
+            <div>
+                <input type="radio" id="allCharacters" name="radio" value="all"> 
+                <label for="allCharacters">Todos los caracteres</label>
+            </div> 
+        </div> 
+    </div>         
+ 
+
+            <div>
+                <button class="btn" id="boton">Generar</button>
+            </div>
+</section>
+    
+  <script src="script/script.js"></script>
+</body>
+</html>
