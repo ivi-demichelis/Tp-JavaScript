@@ -1,17 +1,19 @@
 
-let copyIcon = document.getElementById("copy");
-let refreshIcon = document.getElementById("refresh");
-let passwordPlace = document.getElementById("passwordResult");
+const copyIcon = document.getElementById("copy");
+const refreshIcon = document.getElementById("refresh");
+const passwordPlace = document.getElementById("passwordResult");
 
-let includeNumbers = document.getElementById("includeNumbers");
-let includeLower = document.getElementById("includeLower");
-let includeUpper = document.getElementById("includeUpper");
-let includeSymbols = document.getElementById("includeSymbols");
+const includeNumbers = document.getElementById("includeNumbers");
+const includeLower = document.getElementById("includeLower");
+const includeUpper = document.getElementById("includeUpper");
+const includeSymbols = document.getElementById("includeSymbols");
+const allCheckBox = [includeNumbers, includeLower, includeUpper, includeSymbols];
 
 
-const lettersOnly = document.querySelector("#lettersOnly")
-const numbersOnly = document.querySelector("#numbersOnly")
-const allCharacters = document.getElementById("allCharacters")
+const lettersOnly = document.querySelector("#lettersOnly");
+const numbersOnly = document.querySelector("#numbersOnly");
+const allCharacters = document.getElementById("allCharacters");
+const allRadioBtn = [lettersOnly, numbersOnly, allCharacters]
 
 
     let base = "";
@@ -51,6 +53,27 @@ window.addEventListener("DOMContentLoaded", () => {
     boton.addEventListener("click", () => {
         generate();
     });
+    lettersOnly.addEventListener("input", () =>{
+        includeLower.disabled = false;
+        includeUpper.disabled = false;
+        includeNumbers.disabled = true;
+        includeNumbers.checked = false;
+        includeSymbols.disabled = true;
+        includeSymbols.checked = false;   
+   
+    })
+    
+    numbersOnly.addEventListener("input", () =>{})
+    allCharacters.addEventListener("input", () =>{})
+
+    // allRadioBtn.forEach( radioBtn => {
+    //     radioBtn.addEventListener("click", () => {
+    //         allCheckBox.forEach ( checkbox =>{
+    //             checkbox.checked = false
+    //             checkbox.disabled = true
+    //         })
+    //     })
+    // })
 });
 
 refreshIcon.addEventListener("click", () => {
