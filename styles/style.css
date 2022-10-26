@@ -7,6 +7,7 @@ body{
     min-height: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 2%;
+    margin-top: -15px;
     padding: 5%;
 }
 
@@ -20,7 +21,8 @@ body{
     align-items: center;
     flex-direction: column;
     width: 800px;
-    height: 400px;
+    padding: 20px;
+
 }
 
 .password{
@@ -37,34 +39,36 @@ body{
     margin-left: 0%;
 }
 
-h3.password{
+p.password{
     font-size: 30px;
     width: 300px;
     height: 30px;
     margin-top: -2%;
-    padding-top: 2%;
-}
+    padding-top: 2%; 
+}   
 
-span{
+span.blankSpace{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: row;
-    color: #1b0c2b;
+    color: #15022b;
     width: 300px;
-    height: 100px;
+    height: 100px;    
 }
 
 .icons{
     display: flex;
     flex-direction:row;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
     width: 120px;
     height: 80px;
     font-size: 40px;
     margin-top: -5%;
     cursor: pointer;
+    color: #35056b;
 }
 
 .checkOption{
@@ -121,10 +125,10 @@ label{
     flex-direction: row;
     align-items:center;
     text-align:center;
-    justify-content: center;
+    justify-content:space-between;
     font-size: 20px;
     font-weight: lighter;
-    margin-top: 2%;    
+    margin-top: 2%;       
 }
 
 .radioOption{
@@ -157,7 +161,7 @@ label{
         flex-direction: column;
         font-size: small;
     }
-    h3.password{
+    p.password{
         width: 200px;
     }
     .select{
@@ -183,5 +187,10 @@ label{
     .numberAccount{
         display: flex;
         flex-direction: column;
-    }
 }
+@media (max-width: 400px){
+    .btn{
+        display: flex;
+        flex-direction: column;
+        }
+}}

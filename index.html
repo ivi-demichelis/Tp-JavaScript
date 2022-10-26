@@ -14,16 +14,16 @@
     
       <h1 class="title">Magic Password</h1>
     
-    <h3 class="password">
+    <p class="password"> 
         <span id="passwordResult" class="blankSpace"></span>
-    </h3>
+    </p>
 
         <div class="icons">
         <span id="copy"><i class="fa-solid fa-copy"></i></span>
         <span id="refresh"><i class="fa-sharp fa-solid fa-rotate"></i></span>
         </div>    
 
-        <label for="charactersAmmount"></label> 
+        <label id="charactersAmmount"></label> 
             <div class="numberAccount">
                 <label for="numberRange" id="rangeBarr">Cantidad de caracteres</label>
                 <input type="number" min="4" max="12" id="numberRange" value="4">    
@@ -41,7 +41,7 @@
                 <label for="numbersOnly">Solo numeros</label>
             </div> 
             <div>
-                <input type="radio" id="allCharacters" name="radio" value="all"> 
+                <input type="radio" id="allCharacters" name="radio" value="all" checked> 
                 <label for="allCharacters">Todos los caracteres</label>
             </div> 
         </div> 
@@ -68,7 +68,7 @@
  
 
             <div>
-                <button class="btn" id="boton">Generar</button>
+                <button class="btn" id="button">Generar</button>
             </div>
 </section>
     
