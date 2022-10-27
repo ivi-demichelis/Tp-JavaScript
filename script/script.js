@@ -12,7 +12,6 @@ const includeSymbols = document.getElementById("includeSymbols");
 const lettersOnly = document.querySelector("#lettersOnly");
 const numbersOnly = document.querySelector("#numbersOnly");
 const allCharacters = document.getElementById("allCharacters");
-
     
     const lower = "abcdefghijklmnopqrstuvwxyz";
     const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -104,31 +103,10 @@ refreshIcon.addEventListener("click", () => {
  })
 
  copyIcon.addEventListener("click", () => {    
-    if(passwordPlace.value!= null){
+    if(passwordPlace.innerText != "") {
         navigator.clipboard.writeText(passwordPlace.value);
         alert("Copiado!")
     }else {
         alert("Debes generar una contraseña antes de intentar copiarla.");
     }
 })
-
-generateBtn.addEventListener("click", () =>{
-    if(allCharacters.checked = false){
-        alert("Debes elegir caracteres antes de generar una contraseña")
-    }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
